@@ -9,16 +9,13 @@ Para visualizar meus pedidos
 Contexto: Dado que eu acesse a página de autenticação do portal EBAC-SHOP
 
 Cenário: login com autenticacao valida
-Quando eu digitar o usuário "jose@ebacshop.com.br"
-E e a senha "1234"
+Quando Ao digitar o usuário "jose@ebacshop.com.br" e senha "1234"
 Então deve exibir a tela de checkout
 
 Cenário: login com autenticacao invalida de erro de usuário
-Quando eu digitar o usuário "gsgstes@ebacshop.com.br"
-E e a senha "1234"
+Quando eu digitar o usuário "gsgstes@ebacshop.com.br" e senha "1234"
 Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
 
 Cenário: login com autenticacao invalida de erro de usuário
-Quando eu digitar o usuário "jose@ebacshop.com.br"
-E e a senha "retsr"
+Quando eu digitar o usuário "jose@ebacshop.com.br" e senha "retsr"
 Então deve exibir uma mensagem de alerta: "Usuário ou senha inválidos"
